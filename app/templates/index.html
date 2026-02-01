@@ -1,0 +1,19 @@
+<form method="post" action="/create_profile">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <select name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="unisex">Unisex</option>
+    </select>
+    <input type="text" name="style_pref" placeholder="Style Preference (e.g. casual, formal)" required>
+    <input type="number" name="budget" placeholder="Budget" required>
+    <select name="currency" required>
+        <option value="USD">USD</option>
+        <option value="USDT">USDT</option>
+        <option value="GBP">GBP</option>
+        <option value="EUR">EUR</option>
+        <option value="BDT">BDT</option>
+    </select>
+    <input type="text" name="occasion" placeholder="Occasion (e.g. office, wedding)" required>
+    <button type="submit">Save Profile</button>
+</form>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommendations</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f9f9f9; }
+        .container { max-width: 800px; margin: auto; background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+        h1 { color: #d6336c; text-align: center; }
+        .product { border: 1px solid #ccc; padding: 10px; margin: 10px 0; border-radius: 5px; background: #fdfdfd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Fashion Recommendations for {{ user }}</h1>
+        {% for item in recommendations %}
+            <div class="product">
+                <h3>{{ item.name }}</h3>
+                <p>{{ item.desc }}</p>
+                <p><strong>Occasion:</strong> {{ item.occasion }}</p>
+                <p>
+                    <strong>Price:</strong> ${{ item.price }} USD
+                    {% if currency %}
+                        (≈ {{ (item.price / CURRENCY_RATES[currency]) | round(2) }} {{ currency }})
+                    {% endif %}
+                </p>
+            </div>
+        {% endfor %}
+        <p><a href="/">Back to Home</a></p>
+    </div>
+</body>
+</html>

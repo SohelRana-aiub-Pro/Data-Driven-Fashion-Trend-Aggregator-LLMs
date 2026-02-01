@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Created</title>
+    <style>
+        body { font-family: Arial; margin: 20px; background: #f9f9f9; }
+        .box { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); max-width: 600px; margin: auto; text-align: center; }
+        h1 { color: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>✅ Profile Created Successfully</h1>
+        <p>Welcome, {{ name }}! Your fashion profile has been saved.</p>
+        <p><a href="/recommend/{{ user_id }}">View Your Recommendations</a></p>
+        <p><a href="/">Back to Home</a></p>
+    </div>
+</body>
+</html>
