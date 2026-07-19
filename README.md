@@ -1,6 +1,5 @@
-Data-Driven-Fashion-Trend-Aggregator-LLMs
+ 👗 Data-Driven-Fashion-Trend-Aggregator-LLMs
 ----------------------------------------
-
 The Data-Driven Fashion Trend Aggregator is a FastAPI-based web application designed to
 collect, analyze, and recommend fashion trends to users based on their personal profiles. By
 integrating web scraping, AI-powered summarization, semantic search, and currency
@@ -8,7 +7,6 @@ conversion, the system provides personalized fashion recommendations that adapt 
 preferences, budgets, and occasions
 
 
-# 👗 Data-Driven Fashion Trend Aggregator using LLMs
 
 <p align="center">
 
@@ -17,14 +15,14 @@ preferences, budgets, and occasions
 ![AI](https://img.shields.io/badge/AI-LLM%20Powered-purple)
 ![NLP](https://img.shields.io/badge/NLP-Semantic%20Search-orange)
 ![Web Scraping](https://img.shields.io/badge/Data-Web%20Scraping-green)
-![License](https://img.shields.io/badge/License-MIT-yellow)
+![License](https://img.shields.io/badge/License-GPL2.0-yellow)
 
 </p>
 
 ---
 
-# 📌 Overview
-
+ 📌 Overview
+---------------
 **Data-Driven Fashion Trend Aggregator using LLMs** is an AI-powered fashion intelligence platform built with **FastAPI** that collects, analyzes, and recommends fashion trends based on individual user preferences.
 
 The system combines **web scraping, Large Language Models (LLMs), semantic search, and intelligent recommendation techniques** to deliver personalized fashion insights. Users can discover relevant fashion trends according to their:
@@ -39,28 +37,29 @@ The platform transforms raw fashion data from online sources into meaningful rec
 
 ---
 
+
 # ✨ Key Features
 
-## 🕵️ Automated Fashion Data Collection
-
+ 🕵️ Automated Fashion Data Collection
+------------------------------------------
 * Collects fashion-related information from online sources.
 * Extracts relevant product and trend information.
 * Processes raw web data into structured information.
 
-## 🤖 AI-Powered Trend Summarization
-
+🤖 AI-Powered Trend Summarization
+--------------------------------------
 * Uses Large Language Models (LLMs) to analyze fashion content.
 * Generates concise summaries of emerging trends.
 * Converts complex fashion information into user-friendly insights.
 
-## 🔍 Semantic Search
-
+🔍 Semantic Search
+-----------------------
 * Understands user intent beyond simple keyword matching.
 * Finds fashion items and trends based on meaning and context.
 * Improves recommendation relevance using AI-based retrieval.
 
-## 👤 Personalized Fashion Recommendations
-
+👤 Personalized Fashion Recommendations
+----------------------------------------
 Provides recommendations based on:
 
 * User profile
@@ -69,21 +68,21 @@ Provides recommendations based on:
 * Occasion type
 * Fashion interests
 
-## 💱 Currency Conversion
-
+💱 Currency Conversion
+-----------------------------
 * Supports fashion recommendations across different regions.
 * Converts product prices according to user requirements.
 
-## 🚀 FastAPI Backend
-
+🚀 FastAPI Backend
+-------------------------
 * High-performance REST API architecture.
 * Easy integration with frontend applications.
 * Automatic API documentation support.
 
 ---
 
-# 🏗️ System Architecture
-
+🏗️ System Architecture
+----------------------------
 ```mermaid
 flowchart TD
 
@@ -110,8 +109,8 @@ J --> K[User Recommendations]
 
 ---
 
-# 🔄 Application Workflow
-
+🔄 Application Workflow
+------------------------------
 ```text
                 User Profile
                      |
@@ -139,8 +138,8 @@ J --> K[User Recommendations]
 
 ---
 
-# 🛠️ Technology Stack
-
+ 🛠️ Technology Stack
+-----------------------------------------
 | Category                    | Technology                   |
 | --------------------------- | ---------------------------- |
 | Backend Framework           | FastAPI                      |
@@ -154,38 +153,20 @@ J --> K[User Recommendations]
 
 ---
 
-# 📂 Project Code Structure
 
-```text
-Data-Driven-Fashion-Trend-Aggregator-LLMs/
 
-│
-├── app/
-│   ├── main.py
-│   ├── api/
-│   ├── models/
-│   ├── services/
-│   ├── utils/
-│   └── config/
-│
-├── data/
-│
-├── requirements.txt
-│
-├── .env
-│
-├── README.md
-│
-└── Project Documentation
-```
+For Implement in Local Server/PC , follow the 'Project code structure & Requirements Commands'
+
+
+<img width="571" height="411" alt="Project Code Structure" src="https://github.com/user-attachments/assets/e88b06e7-09a7-459f-9393-bfa59fcc5775" />
 
 > Update the structure above according to the final repository folder arrangement.
 
 ---
 
-# ⚙️ Local Installation & Setup
-
-## 1. Clone Repository
+⚙️ Local Installation & Setup
+-----------------------------------
+Clone Repository
 
 ```bash
 git clone https://github.com/SohelRana-aiub-Pro/Data-Driven-Fashion-Trend-Aggregator-LLMs.git
@@ -198,47 +179,14 @@ cd Data-Driven-Fashion-Trend-Aggregator-LLMs
 ```
 
 ---
-
-## 2. Create Virtual Environment
-
-### Windows
-
-```bash
-python -m venv venv
-venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-python3 -m venv venv
-source venv/bin/activate
-```
-
----
-
-## 3. Install Requirements
+Install Requirements
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
 
-# 🔐 Environment Configuration
 
-Create a `.env` file in the project root.
-
-Example:
-
-```env
-LLM_API_KEY=your_api_key
-DATABASE_URL=your_database_url
-```
-
-Add required API credentials according to your configuration.
-
----
 
 # ▶️ Running the Application
 
@@ -248,22 +196,9 @@ Start the FastAPI server:
 uvicorn app.main:app --reload
 ```
 
-The application will run at:
 
-```
-http://127.0.0.1:8000
-```
-
-API documentation:
-
-```
-http://127.0.0.1:8000/docs
-```
-
----
-
-# 📡 API Capabilities
-
+API Capabilities
+----------------------------
 The system provides APIs for:
 
 | Function                  | Description                        |
@@ -276,8 +211,8 @@ The system provides APIs for:
 
 ---
 
-# 🎯 Use Cases
-
+🎯 Use Cases
+-----------------------
 This project can support:
 
 * 👗 Fashion recommendation platforms
@@ -288,8 +223,8 @@ This project can support:
 
 ---
 
-# 🚀 Future Improvements
-
+🚀 Future Improvements
+-------------------------------
 Possible enhancements:
 
 * Real-time social media trend monitoring
@@ -302,8 +237,8 @@ Possible enhancements:
 
 ---
 
-# 🤝 Contribution
-
+ 🤝 Contribution
+--------------------------
 Contributions are welcome.
 
 Steps:
@@ -316,23 +251,19 @@ Steps:
 
 ---
 
-# 📜 License
 
-This project is released under the MIT License.
-
----
-
-# 👨‍💻 Author
+Author
+----------------
 
 **Sohel Rana**
-
+Digital Currency Investor & Technical Lead
 GitHub:
 https://github.com/SohelRana-aiub-Pro
 
 ---
 
-# ⭐ Support
-
+⭐ Support
+-------------------
 If this project helped you or inspired your work, consider giving the repository a star ⭐.
 
 
@@ -340,18 +271,11 @@ If this project helped you or inspired your work, consider giving the repository
 
 
 
-
-For Implement in Local Server/PC , follow the 'Project code structure & Requirements Commands'
-
-
-<img width="571" height="411" alt="Project Code Structure" src="https://github.com/user-attachments/assets/e88b06e7-09a7-459f-9393-bfa59fcc5775" />
-
 Sample Predicted App Outputs;
 
 
-
-
 <img width="1064" height="146" alt="Sample_Inputs_for_Fashion" src="https://github.com/user-attachments/assets/8e46f9a0-0aa8-44b1-b9dc-16e4f503ddaf" />
+
 
 
 <img width="747" height="246" alt="Sample_database_for_fashion_profile" src="https://github.com/user-attachments/assets/58c185a1-8bff-41f8-97b0-84a77ec2bb85" />
